@@ -1,0 +1,5 @@
+E:\HeroCliq\HeroCliq\bin\HeroCliq.dll
+E:\HeroCliq\HeroCliq\bin\HeroCliq.pdb
+E:\HeroCliq\HeroCliq\obj\Debug\ResolveAssemblyReference.cache
+E:\HeroCliq\HeroCliq\obj\Debug\HeroCliq.dll
+E:\HeroCliq\HeroCliq\obj\Debug\HeroCliq.pdb
