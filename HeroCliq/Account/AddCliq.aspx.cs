@@ -12,6 +12,7 @@ namespace HeroCliq.Account
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        public TextBox tb = new TextBox();
         public TextBox[] speed = new TextBox[12];
         public TextBox[] attack = new TextBox[12];
         public TextBox[] defence = new TextBox[12];
@@ -60,6 +61,7 @@ namespace HeroCliq.Account
                 speed[i].Height = 20;
                 speed[i].Font.Bold = true;
                 speed[i].TextChanged += new EventHandler(handler); ////NEED TO WORK OUT HANDLER
+                speed[i].AutoPostBack = true;
                 Panel1.Controls.Add(new LiteralControl("<td>"));
                 Panel1.Controls.Add(speed[i]);
                 Panel1.Controls.Add(new LiteralControl("</td>"));
@@ -136,14 +138,99 @@ namespace HeroCliq.Account
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void handleTextClicks_Click(object sender, EventArgs e)
         {
-            TextBox tb = new TextBox();
+
             tb = (TextBox)sender;
-            tb.BackColor = Color.Green;
+
+            string statData = tb.Text;
+
+            setColour(tb, ddlCliq.SelectedValue);
+       
+        }
+
+        public void setColour(TextBox cliqTB, String value)
+        {
+
+            switch (value)
+            {
+
+                case "Re":
+                    cliqTB.BackColor = Color.Red;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "Gr":
+                    cliqTB.BackColor = Color.Gray;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "Pu":
+                    cliqTB.BackColor = Color.Purple;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "Br":
+                    cliqTB.BackColor = Color.SaddleBrown;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "Or":
+                    cliqTB.BackColor = Color.DarkOrange;
+                    cliqTB.ForeColor = Color.Black;
+                    break;
+                case "Bl":
+                    cliqTB.BackColor = Color.Black;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "LB":
+                    cliqTB.BackColor = Color.LightBlue;
+                    cliqTB.ForeColor = Color.Black;
+                    break;
+                case "DB":
+                    cliqTB.BackColor = Color.DarkBlue;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "LG":
+                    cliqTB.BackColor = Color.OliveDrab;
+                    cliqTB.ForeColor = Color.Black;
+                    break;
+                case "DG":
+                    cliqTB.BackColor = Color.Green;
+                    cliqTB.ForeColor = Color.White;
+                    break;
+                case "Wh":
+                    cliqTB.BackColor = Color.White;
+                    cliqTB.ForeColor = Color.Black;
+                    cliqTB.BorderStyle = BorderStyle.Solid;
+                    cliqTB.BorderWidth = 2;
+                    break;
+                case "KO":
+                    cliqTB.BackColor = Color.White;
+                    cliqTB.ForeColor = Color.Red;
+                    break;
+                default:
+                    cliqTB.BackColor = Color.White;
+                    cliqTB.ForeColor = Color.Black;
+                    break;
+
+
+
+            }
+        }
+
+        protected void ddlCliq_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //tb.Text = "BUM";
+            /*switch (ddlCliq.SelectedIndex)
+            {
+
+                case 0:
+                    tb.BackColor = Color.Orange;
+                    break;
+                case 1:
+                    tb.BackColor = Color.Green;
+                    break;
+            }*/
         }
     }
 }

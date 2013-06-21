@@ -132,7 +132,7 @@ namespace HeroCliq.Account
            
             string cliqNumber = lstCliqs.Text;
 
-            string myConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=E:\HeroCliq_Cliqs.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True;";
+            string myConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\HeroCliq_Cliqs.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True;";
             SqlConnection conn = new SqlConnection(myConnectionString);
             SqlCommand comm = new SqlCommand("SELECT * FROM Cliqs WHERE Cliq_Number LIKE '" + cliqNumber + "'", conn);
             conn.Open();

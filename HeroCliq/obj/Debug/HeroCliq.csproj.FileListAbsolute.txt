@@ -3,3 +3,8 @@ E:\HeroCliq\HeroCliq\bin\HeroCliq.pdb
 E:\HeroCliq\HeroCliq\obj\Debug\ResolveAssemblyReference.cache
 E:\HeroCliq\HeroCliq\obj\Debug\HeroCliq.dll
 E:\HeroCliq\HeroCliq\obj\Debug\HeroCliq.pdb
+C:\Users\Jamie\Documents\Visual Studio 2010\Projects\HeroCliq\HeroCliq\bin\HeroCliq.dll
+C:\Users\Jamie\Documents\Visual Studio 2010\Projects\HeroCliq\HeroCliq\bin\HeroCliq.pdb
+C:\Users\Jamie\Documents\Visual Studio 2010\Projects\HeroCliq\HeroCliq\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jamie\Documents\Visual Studio 2010\Projects\HeroCliq\HeroCliq\obj\Debug\HeroCliq.dll
+C:\Users\Jamie\Documents\Visual Studio 2010\Projects\HeroCliq\HeroCliq\obj\Debug\HeroCliq.pdb

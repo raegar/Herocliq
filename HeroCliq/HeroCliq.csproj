@@ -61,8 +61,14 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\UserAccount.aspx" />
     <Content Include="Account\AddCliq.aspx" />
-    <Content Include="Data\HeroCliq_Cliqs.mdf" />
-    <Content Include="Data\HeroCliq_Games.mdf" />
+    <Content Include="App_Data\HeroCliq_Cliqs.mdf" />
+    <Content Include="App_Data\HeroCliq_Cliqs_log.ldf">
+      <DependentUpon>HeroCliq_Cliqs.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\HeroCliq_Games.mdf" />
+    <Content Include="App_Data\HeroCliq_Games_log.ldf">
+      <DependentUpon>HeroCliq_Games.mdf</DependentUpon>
+    </Content>
     <Content Include="Images\Attack.png" />
     <Content Include="Images\Damage.png" />
     <Content Include="Images\Defence.png" />
@@ -164,9 +170,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
