@@ -60,6 +60,8 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\UserAccount.aspx" />
     <Content Include="Account\AddCliq.aspx" />
+    <Content Include="Data\HeroCliq_Cliqs.mdf" />
+    <Content Include="Data\HeroCliq_Games.mdf" />
     <Content Include="Images\Attack.png" />
     <Content Include="Images\Damage.png" />
     <Content Include="Images\Defence.png" />
